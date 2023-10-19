@@ -1,0 +1,32 @@
+A student will not be allowed to sit in exam if his/her attendance is less than 85%. Take the following inputs from the student: Number of subjects, Number of classes held in each subject, Number of classes attended in each subject and display percentage of class attended in each subject, claculate the total attendance % Is the student is allowed to sit in exam or not.
+
+
+x=eval(input("Enter the Number of Subjects : "))
+sum=0
+for i in range(0,x,1):
+    a=eval(input("Enter the Nummber of Classes Conducted : "))
+    b=eval(input("Enter the number of classes attended by the student : "))
+    c=(b/a)*100
+    print("Percentage:",c)
+    sum=sum+c
+z=(sum/x)
+print("Overall Percentage : ",z)
+
+if (z<85):
+    print("Attendance Shortage , Not Permitted for Exam")
+else:
+    print("Above Attendance , Permitted for Exam ")
+
+***********************************************************************
+OUTPUT
+
+Enter the Number of Subjects : 2
+Enter the Nummber of Classes Conducted : 2
+Enter the number of classes attended by the student : 2
+Percentage: 100.0
+Enter the Nummber of Classes Conducted : 4
+Enter the number of classes attended by the student : 3
+Percentage: 75.0
+Overall Percentage :  87.5
+Above Attendance , Permitted for Exam 
+************************************************************************
