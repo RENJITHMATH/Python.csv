@@ -51,3 +51,28 @@ elif(x==2):
     print("Wrong Option")
 else:
     print("Wrong Option")
+
+
+
+
+
+
+
+
+****************************************************************************************
+OUTPUT
+
+*********WELCOME TO  LEELA PALACE RESTAURANT ********
+________Welcome Guest_________
+Select your MAIN COURSE : 
+Enter 1 for Eggs
+Enter 2 for Pancake
+Enter 3 for South Indian
+Enter your choice : 1
+SELECT YOUR DISH
+Enter 1 for Omlette
+Enter 2 for Scrambled Eggs
+Enter 3 for Boiled Eggs
+Enter your choice : 2
+Dear Guest: You chose Eggs and you prefer Scrambled Eggs. Its ordered. THANKS.
+*************************************************************************************
