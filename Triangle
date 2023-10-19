@@ -1,1 +1,19 @@
 To check whether the angle given by the user will make an triangle  or not
+
+x=eval(input("Enter 1st angle : "))
+y=eval(input("Enter 2nd angle : "))
+z=eval(input("Enter 3rd angle : "))
+if((x+y+z)==180):
+  print("It forms a triangle")
+else:
+  print("It doesnt form a triangle")
+
+
+
+************************************
+OUTPUT
+Enter 1st angle : 45
+Enter 2nd angle : 5
+Enter 3rd angle : 98
+It doesnt form a triangle
+***********************************
