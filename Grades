@@ -1,0 +1,25 @@
+The School has following rules for grading system:
+Below 25 - F
+25 -45 - E
+45 -50 - D
+50 -60 - C
+60 - 80 - B
+Above 80 - A 
+Ask the user to enter marks and print the corresponding grades.
+
+SOLUTION: 
+
+x=eval(input("Enter the mark : "))
+if (x>80):
+    print("Grade : A")
+elif (x>60 and x<=80):
+    print("Grade : B")
+elif (x>50 and x<=60):
+    print("Grade : C")
+elif (x>45 and x<=50):
+    print("Grade : D")
+elif (x>25 and x<=45):
+    print("Grade : E")
+elif (x<25):
+    print("Grade : F")
+
