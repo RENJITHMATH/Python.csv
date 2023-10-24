@@ -1,0 +1,11 @@
+Getting the number from the user and checking whether the given number is prime or not
+
+
+x=eval(input("Enter a number to be checked: "))
+for i in range(2,x//2,1):
+  if(x%i==0):
+    print(x," is not a Prime Number")
+    break
+  else:
+    print(x," is a Prime Number")
+    break
