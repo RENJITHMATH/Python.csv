@@ -1,0 +1,9 @@
+Getting the number from the user and getting the factorial of that number
+
+
+i=eval(input("Enter the number to find the  factorial : "))
+y=1
+while(i>=1):
+  y=y*i
+  i=i-1
+print(y)
