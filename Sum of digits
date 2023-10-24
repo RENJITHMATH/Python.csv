@@ -1,0 +1,10 @@
+Getting the number from the user and adding the digits of the number 
+
+
+x=eval(input("Enter a  number : "))  #sum of the  digits
+sum=0
+while(x!=0):
+  y=x%10
+  sum=sum+y
+  x=x//10
+print(sum)
