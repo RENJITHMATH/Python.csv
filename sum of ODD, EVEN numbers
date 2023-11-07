@@ -1,0 +1,29 @@
+sum_even=0
+sum_odd=0
+for i in range (1,11,1):
+  x=eval(input("Enter a number : "))
+  if x%2==0:
+    sum_even=sum_even+x
+  else:
+    sum_odd=sum_odd+x
+print("Sum of Even Numbers: ",sum_even)
+print("Sum of Odd Numbers: ",sum_odd)
+if(sum_even>sum_odd):
+  print("Sum of Even Digits is greater than Sum of Odd Digits ")
+else:
+  print("Sum of Even Digits is Lesser than Sum of Odd Digits ")
+
+  
+  
+  *************************************************************************
+  *************************************************************************
+  
+  OUTPUT
+
+Enter a number : 999
+Enter a number : 500
+Enter a number : 400
+Enter a number : 32
+Sum of Even Numbers:  932
+Sum of Odd Numbers:  999
+Sum of Even Digits is Lesser than Sum of Odd Digits 
