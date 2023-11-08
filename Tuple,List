@@ -1,0 +1,35 @@
+team = [
+('Marta', 20, 'center'), 
+('Ana', 22, 'point guard'), 
+('Gabi', 22, 'shooting guard'), 
+('Luz', 21, 'power forward'), 
+('Lorena', 19, 'small forward'),
+]
+
+
+def player_position(players):
+    result= []
+    for name, age, position in players:
+        result.append('Name: {:>19} \nPosition: {:>15}\n'.format(name, position))
+    return result
+
+for player in player_position(team): 
+    print(player)
+
+**********************************************************************************************
+OUTPUT
+
+Name:               Marta 
+Position:          center
+
+Name:                 Ana 
+Position:     point guard
+
+Name:                Gabi 
+Position:  shooting guard
+
+Name:                 Luz 
+Position:   power forward
+
+Name:              Lorena 
+Position:   small forward
