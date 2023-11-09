@@ -1,0 +1,20 @@
+import numpy as np 
+import pandas as pd
+
+data = {'planet': ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'], 
+        'radius_km': [2440, 6052, 6371, 3398, 69911, 58232, 25362, 24622],
+        'moons': [0, 0, 1, 2, 80, 83, 27, 14], 
+        'type': ['terrestrial', 'terrestrial', 'terrestrial', 'terrestrial', 'gas giant', 'gas giant', 'ice giant', 'ice giant'], 
+        'rings': ['no', 'no', 'no', 'no', 'yes', 'yes', 'yes', 'yes'], 
+        'mean_temp_c': [167, 464, 15, -65, -110, -140, -195, -200], 
+        'magnetic_field': ['yes', 'no', 'yes', 'no', 'yes', 'yes', 'yes', 'yes'] }
+
+planets = pd.DataFrame(data)
+planets
+planets.groupby(["type"])
+planets.groupby(["type"]).sum()
+planets.groupby(["type"]).sum()["moons"]
+planets.groupby(["type","magnetic_field"]).mean()
+planets.groupby(["type","magnetic_field"]).max()
+planets.groupby(["type","magnetic_field"]).min()
+planets.groupby(["type"]).agg(["mean","median"])
