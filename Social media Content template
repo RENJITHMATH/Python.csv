@@ -1,0 +1,68 @@
+def view_calendar(calendar):
+    for day, i in calendar.items():
+        if i:
+            print(f"{day}: {', '.join(i)}")
+        else:
+            print(f"{day}: No content added")
+
+content_calendar = initialize_calendar()
+
+while True:
+    print("\nOptions:")
+    print("1. Add content to a day")
+    print("2. View entire calendar")
+    print("3. Exit")
+
+    choice = input("Enter your choice (1/2/3): ")
+
+    if choice == '1':
+        day = input("Enter the day to add content: ")
+        content = input("Enter the content: ")
+        add_content(content_calendar, day, content)
+    elif choice == '2':
+        print("\nContent Calendar:")
+        view_calendar(content_calendar)
+    elif choice == '3':
+        print("Exiting the program. Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please enter 1, 2, or 3.")
+
+
+
+**************************************************************************************************
+OUTPUT
+
+Options:
+1. Add content to a day
+2. View entire calendar
+3. Exit
+Enter your choice (1/2/3): 1
+Enter the day to add content: Monday
+Enter the content: oooooooooooooooo
+Content added to Monday: oooooooooooooooo
+
+Options:
+1. Add content to a day
+2. View entire calendar
+3. Exit
+Enter your choice (1/2/3): 2
+
+Content Calendar:
+Monday: oooooooooooooooo
+Tuesday: No content added
+Wednesday: No content added
+Thursday: No content added
+Friday: No content added
+Saturday: No content added
+Sunday: No content added
+
+Options:
+1. Add content to a day
+2. View entire calendar
+3. Exit
+Enter your choice (1/2/3): 3
+Exiting the program. Goodbye!
+
+
+***********************************************************************************************
